@@ -1,37 +1,10 @@
 @charset "UTF-8";
 
-/* COLORS */
-/*
-    Almost white: whitesmoke
-    Light grey: #b3b2b2
-    Grey: #767676
-    Dark grey: #575757
-    Almost black: #2d2d2d
-    Red: #a94d4d
-    Dark red: #7a2d2d
-    Green: #7da248
-    Dark green: #57762a
-    Blue: #66a5df
-    Dark blue: 1e5384
-    Yellow: #d2a331
-    Dark yellow: #8e6605
-*/
-
-/* CLEARFIX */
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
-}
-
-.clearfix:after {
-    clear: both;
-}
-
 /* RESETS */
 html {
   box-sizing: border-box;
 }
+
 *, *:before, *:after {
   box-sizing: inherit;
   margin: 0;
@@ -248,4 +221,3 @@ p>code, li>code, dd>code, td>code {
   margin: 0 3px 0 1px;
   font-size: 1.1em;
 }
-
