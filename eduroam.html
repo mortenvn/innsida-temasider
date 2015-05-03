@@ -35,7 +35,7 @@
     <optgroup label="Andre">
       <option value="ios">iOS</option>
       <option value="android">Android</option>
-      <option value="general">Annet</option>
+      <option value="general">Annet OS</option>
     </optgroup>
   </select>
 
@@ -57,6 +57,21 @@
   -->
   <h3>Instruksjoner</h3>
 
+  <!-- Windows 8 -->
+  <div class="instructions win-8">
+    <ol class="ol-big-numbers">
+      <li>
+        <a href="#" class="button button-primary">Last ned automatisk oppsett</a>
+      </li>
+      <li>Kjør filen du lastet ned. Dette vil starte en veiviser som vil hjelpe deg å sette opp eduroam. Følg instruksjonene.</li>
+      <li>Du vil bli spurt om brukernavn og passord. Fyll inn <code>brukernavn@ntnu.no</code> og <code>ditt-ntnu-passord</code>. Legg merke til at du må skrive @ntnu.no og <em>ikke</em> @stud.ntnu.no.</li>
+      <li>Etter at oppsettet er ferdig kan du koble deg til internett ved å velge <strong>eduroam</strong> i oversikten over trådløse nettverk.</li>
+    </ol>
+    <div class="alert alert-warning">
+      <strong>Fungerte det ikke?</strong> Om det automatiske oppsettet ikke virker kan du forsøke å sette opp eduroam <a href="#">manuelt</a>.
+    </div>
+  </div>
+
   <!-- Windows 7 -->
   <div class="instructions win-7">
     <ol class="ol-big-numbers">
@@ -72,8 +87,23 @@
     </div>
   </div>
 
+  <!-- Windows Vista -->
+  <div class="instructions win-vista">
+    <ol class="ol-big-numbers">
+      <li>
+        <a href="#" class="button button-primary">Last ned automatisk oppsett</a>
+      </li>
+      <li>Kjør filen du lastet ned. Dette vil starte en veiviser som vil hjelpe deg å sette opp eduroam. Følg instruksjonene.</li>
+      <li>Du vil bli spurt om brukernavn og passord. Fyll inn <code>brukernavn@ntnu.no</code> og <code>ditt-ntnu-passord</code>. Legg merke til at du må skrive @ntnu.no og <em>ikke</em> @stud.ntnu.no.</li>
+      <li>Etter at oppsettet er ferdig kan du koble deg til internett ved å velge <strong>eduroam</strong> i oversikten over trådløse nettverk.</li>
+    </ol>
+    <div class="alert alert-warning">
+      <strong>Fungerte det ikke?</strong> Om det automatiske oppsettet ikke virker kan du forsøke å sette opp eduroam <a href="#">manuelt</a>.
+    </div>
+  </div>
 
-<!-- OS X 10.10 (Yosemite) -->
+
+  <!-- OS X 10.10 (Yosemite) -->
   <div class="instructions osx-yosemite">
     <ol class="ol-big-numbers">
       <li>
@@ -89,6 +119,7 @@
     </div>
   </div>
 
+
   <!-- OS X 10.9 (Mavericks) -->
   <div class="instructions osx-mavericks">
     <ol class="ol-big-numbers">
@@ -101,7 +132,41 @@
   </div>
 
 
-   <!-- Linux -->
+  <!-- OS X 10.8 (Mountain Lion) -->
+  <div class="instructions osx-mountain-lion">
+    <ol class="ol-big-numbers">
+      <li>
+        <a href="#" class="button button-primary">Last ned automatisk oppsett</a>
+      </li>
+      <li>Kjør filen du lastet ned. Dette vil starte en veiviser som vil hjelpe deg å sette opp eduroam. Følg instruksjonene.</li>
+      <li>Du vil bli spurt om brukernavn og passord. Fyll inn <code>brukernavn@ntnu.no</code> og <code>ditt-ntnu-passord</code>. Legg merke til at du må skrive @ntnu.no og <em>ikke</em> @stud.ntnu.no.</li>
+      <li>Tast inn Mac-passordet ditt for å bekrefte endringene. Installasjonen vil avsluttes og du kan nå lukke profil-vinduet.</li>
+      <li>Etter at oppsettet er ferdig kan du koble deg til internett ved trykke på trådløs-symbolet øverst i høyre hjørne og deretter velge <strong>eduroam</strong> fra listen.</li>
+    </ol>
+    <div class="alert alert-warning">
+      <strong>Fungerte det ikke?</strong> Om det automatiske oppsettet ikke virker kan du forsøke å sette opp eduroam <a href="#">manuelt</a>.
+    </div>
+  </div>
+
+
+  <!-- OS X 10.7 (Lion) -->
+  <div class="instructions osx-lion">
+    <ol class="ol-big-numbers">
+      <li>
+        <a href="#" class="button button-primary">Last ned automatisk oppsett</a>
+      </li>
+      <li>Kjør filen du lastet ned. Dette vil starte en veiviser som vil hjelpe deg å sette opp eduroam. Følg instruksjonene.</li>
+      <li>Du vil bli spurt om brukernavn og passord. Fyll inn <code>brukernavn@ntnu.no</code> og <code>ditt-ntnu-passord</code>. Legg merke til at du må skrive @ntnu.no og <em>ikke</em> @stud.ntnu.no.</li>
+      <li>Tast inn Mac-passordet ditt for å bekrefte endringene. Installasjonen vil avsluttes og du kan nå lukke profil-vinduet.</li>
+      <li>Etter at oppsettet er ferdig kan du koble deg til internett ved trykke på trådløs-symbolet øverst i høyre hjørne og deretter velge <strong>eduroam</strong> fra listen.</li>
+    </ol>
+    <div class="alert alert-warning">
+      <strong>Fungerte det ikke?</strong> Om det automatiske oppsettet ikke virker kan du forsøke å sette opp eduroam <a href="#">manuelt</a>.
+    </div>
+  </div>
+
+
+  <!-- Linux -->
   <div class="instructions linux">
     <ol class="ol-big-numbers">
       <li>
@@ -114,10 +179,131 @@
       <li>Når du blir bedt om å passord, fyll inn <code>ditt-ntnu-passord</code>.</li>
       <li>Etter at oppsettet er ferdig kan du koble deg til internett ved å trykke på <strong>trådløs-ikonet</strong> i menybaren og velge <strong>eduroam</strong>.</li>
     </ol>
-
     <div class="alert alert-warning">
       <strong>Fungerte det ikke?</strong> Om det automatiske oppsettet ikke virker kan du forsøke å sette opp eduroam <a href="#">manuelt</a>.
     </div>
+  </div>
+
+
+  <!-- iOS -->
+  <div class="instructions ios">
+    <ol class="ol-big-numbers">
+      <li>Naviger til: Innstillinger → Wi-Fi →  trykk på <strong>eduroam</strong>.</li>
+      <li>Du vil bli spurt om brukernavn og passord. Fyll inn <code>brukernavn@ntnu.no</code> og <code>ditt-ntnu-passord</code>. Legg merke til at du må skrive @ntnu.no og <em>ikke</em> @stud.ntnu.no.</li>
+      <li>Du vil bli bedt om å godta eduroams sertifikat. Trykk <strong>Godkjenn</strong>.</li>
+      <li>Oppsettet er nå ferdig og du kan begynne å surfe.</li>
+    </ol>
+  </div>
+
+
+  <!-- Android -->
+  <div class="instructions android">
+    <ol class="ol-big-numbers">
+      <li>Naviger til: Innstillinger → Wi-Fi → trykk på <strong>eduroam</strong>.</li>
+      <li>Bruk følgende innstillinger <span class="faded">(grå felt er ofte ferdig utfylt)</span>:
+        <table class="first-column-strong">
+          <tr>
+            <td>EAP-metode:</td>
+            <td class="faded">PEAP</td>
+          </tr>
+          <tr>
+            <td>Fase 2-autentisering:</td>
+            <td>MSCHAPV2</td>
+          </tr>
+          <tr>
+            <td>CA-sertifikat:</td>
+            <td class="faded">(Ikke spesifisert)</td>
+          </tr>
+          <tr>
+            <td>Brukersertifikat:</td>
+            <td class="faded">(Ikke spesifisert)</td>
+          </tr>
+          <tr>
+            <td>Identitet:</td>
+            <td>ditt-brukernavn@ntnu.no<br><em>(OBS! Ikke @stud.ntnu.no)</em></td>
+          </tr>
+          <tr>
+            <td>Anonym identitet:</td>
+            <td class="faded">(Tomt felt)</td>
+          </tr>
+          <tr>
+            <td>Passord:</td>
+            <td>ditt-ntnu-passord</td>
+          </tr>
+          <tr>
+            <td>Proxy:</td>
+            <td class="faded">Ingen</td>
+          </tr>
+          <tr>
+            <td>IP-innstillinger:</td>
+            <td class="faded">DHCP</td>
+          </tr>
+        </table>
+      </li>
+      <li>Trykk <strong>Lagre</strong>. Oppsettet er nå ferdig og du kan begynne å surfe.</li>
+    </ol>
+  </div>
+
+
+  <!-- General (Unknown OS) -->
+  <div class="instructions general">
+    <p>Finner du ikke en spesifikk veiledning for <em>ditt</em> operativsystem? Nedenfor følger en generell veiledning for hvordan du skal sette opp eduroam. Nøyaktig hva du må fylle inn, og hvilke felt som dukker opp, kan variere litt fra operativsystem til operativsystem. Gjør ditt beste for å fylle det ut så likt som mulig.</p>
+    <table class="first-column-strong">
+      <tr>
+        <td>Nettverksnavn <br><span class="faded">(også kalt SSID og Wi-Fi)</span></td>
+        <td>eduroam</td>
+      </tr>
+      <tr>
+        <td>Nettverksgodkjenning <br><span class="faded">(også kalt Sikkerhetstype)</span></td>
+        <td>WPA2-Enterprise</td>
+      </tr>
+      <tr>
+        <td>Krypteringstype</td>
+        <td>AES</td>
+      </tr>
+      <tr>
+        <td>Brukernavn <br><span class="faded">(også kalt Identitet)</span></td>
+        <td>ntnu-brukernavn@ntnu.no<br><em>(OBS! Ikke @stud.ntnu.no)</em></td>
+      </tr>
+      <tr>
+        <td>Anonym identitet</td>
+        <td>(Tomt felt)</td>
+      </tr>
+      <tr>
+        <td>Passord</td>
+        <td>Ditt NTNU-passord</td>
+      </tr>
+      <tr>
+        <td>EAP-metode <br><span class="faded">(også kalt Nettverksautentifikasjon)</span></td>
+        <td>Protected EAP <br><span class="faded">(eventuelt PEAP, TTLS, eller Tunnelled TLS)</span></td>
+      </tr>
+      <tr>
+        <td>Fase 2-autentisering <br><span class="faded">(også kalt Indre Autentifisering og Autentifikasjonsmetode)</span></td>
+        <td>MSCHAPV2 <br><span class="faded">(eventuelt EAP-MSCHAP v2)</span></td>
+      </tr>
+      <tr>
+        <td>CA-sertifikat</td>
+        <td>(Ikke spesifisert)</td>
+      </tr>
+      <tr>
+        <td>Brukersertifikat</td>
+        <td>(Ikke spesifisert)</td>
+      </tr>
+      <tr>
+        <td>Proxy</td>
+        <td>Ingen</td>
+      </tr>
+      <tr>
+        <td>IP-innstillinger</td>
+        <td>DHCP</td>
+      </tr>
+    </table>
+
+    <p>Andre valg som kan dukke opp:</p>
+    <ul>
+      <li><strong>Sertifikat / Credentials:</strong> På noen operativsystem må du godkjenne eduroams sertifikat (kalt radius.ntnu.no). Her skal du trykke <strong>Godkjenn</strong> eller lignende. Huk av eventuelle bokser som lar deg velge å alltid godkjenne dette sertifikatet.</li>
+      <li>Hvis enheten din ikke støtter WPA2-Enterprise med AES, så kan også <strong>WPA-Enterprise</strong> med <strong>TKIP</strong>-kryptering benyttes.</li>
+    </ul>
   </div>
 
 
