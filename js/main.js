@@ -22,7 +22,7 @@ $('.getting-online-module .change-os-select').change(function() {
 // check the values in the select box .change-os-select
 var instruction_os;
 
-if (platform.os.family === 'Windows') {
+if (platform.os.family.match(/Windows/g) && !platform.os.family.match(/Windows Phone/g)) {
   var windows_version = platform.os.version.substring(0, 1); // Only get the first number
   if      (windows_version.match(/6/g))         { instruction_os = 'win-vista'; }
   else if (windows_version.match(/7/g))         { instruction_os = 'win-7'; }
