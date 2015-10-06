@@ -1,16 +1,16 @@
 // When the 'change OS' link is clicked, show the OS select box
-$('.change-os-button').click(function(event) {
+$('.getting-online-module .change-os-button').click(function(event) {
   event.preventDefault();
   $(this).hide();
-  $(".change-os-select").show();
+  $(".getting-online-module .change-os-select").show();
 });
 
 // When an OS is selected from the select box, change what guide is being shown
-$('.change-os-select').change(function() {
-  var $selected_os = $('.change-os-select option:selected');
-  $('.os-name').text($selected_os.text());
-  $('.instructions').hide();
-  $('.instructions.' + $selected_os.val()).show();
+$('.getting-online-module .change-os-select').change(function() {
+  var $selected_os = $('.getting-online-module .change-os-select option:selected');
+  $('.getting-online-module .os-name').text($selected_os.text());
+  $('.getting-online-module .instructions').hide();
+  $('.getting-online-module .instructions.' + $selected_os.val()).show();
 });
 
 // -------------------------------------------------
@@ -52,6 +52,6 @@ else if (platform.os.family === 'CentOS' ||
 else                                            { instruction_os = 'general'; }
 
 // When the page loads, show the guide for the detected OS
-$('.change-os-select').val(instruction_os);
-$('.instructions.' + instruction_os).show();
-$('.os-name').text($('.change-os-select option:selected').text());
+$('.getting-online-module .change-os-select').val(instruction_os);
+$('.getting-online-module .instructions.' + instruction_os).show();
+$('.getting-online-module .os-name').text($('.getting-online-module .change-os-select option:selected').text());

@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* RESETS */
-html {
+.getting-online-module {
   box-sizing: border-box;
 }
 
@@ -11,64 +11,72 @@ html {
   padding: 0;
 }
 
-input,
-select,
-textarea,
-button {
+.getting-online-module input,
+.getting-online-module select,
+.getting-online-module textarea,
+.getting-online-module button {
   font-family: inherit;
 }
 
-img {
+.getting-online-module img {
   border : 0;
 }
 
-ul {
+.getting-online-module ul {
   margin-left: 20px;
 }
 
 
 /* BASIC STYLING */
-body {
+.getting-online-module {
   font-family: "Open Sans", sans-serif;
   line-height: 1.6;
 }
 
+.getting-online-module a {
+  color: #4472b9;
+}
 
-.introduction {
+.getting-online-module a:hover {
+  color: #767676;
+}
+
+
+.getting-online-module .introduction {
   color: #666;
   margin: 10px 0 20px 0;
 }
 
-.change-os-button {
+.getting-online-module .change-os-button {
   font-size: .8em;
   margin-bottom: 20px;
   margin-top: -5px;
 }
 
-.form-control.change-os-select {
+.getting-online-module .form-control.change-os-select {
   display: none;
   margin-bottom: 10px;
 }
 
-.instructions {
+.getting-online-module .instructions {
   display: none;
 }
 
 /* ORDERED LISTS */
-.ol-big-numbers {
+.getting-online-module .ol-big-numbers {
   margin-left: 0;
   padding-right: 0;
   list-style-type: none;
 }
 
-.ol-big-numbers>li {
+.getting-online-module .ol-big-numbers>li {
   counter-increment: step-counter;
   margin-bottom: 30px;
   margin-left: 40px;
   position: relative;
 }
 
-.ol-big-numbers>li::before {
+.getting-online-module .ol-big-numbers>li::before {
     content: counter(step-counter);
     font-size: 80%;
     background-color: rgb(200,200,200);
@@ -82,7 +90,7 @@ body {
 
 /* CSS SELECT */
 /* Custom dropdown */
-.form-control {
+.getting-online-module .form-control {
   display: block;
   width: 100%;
   height: 34px;
@@ -97,12 +105,12 @@ body {
   border-radius: 4px;
 }
 
-.form-control:focus{
+.getting-online-module .form-control:focus{
     outline: 0;
 }
 
 /* Buttons */
-.button {
+.getting-online-module .button {
   -webkit-appearance: none;
   border: none;
   position: relative;
@@ -127,96 +135,123 @@ body {
   cursor: pointer;
 }
 
-a.button .fa {
+.getting-online-module a.button .fa {
   position: relative;
   top: 1px;
 }
 
-.button.disabled {
+.getting-online-module .button.disabled {
   opacity: 0.2;
 }
 
-button.button,
-input[type=submit].button {
+.getting-online-module button.button,
+.getting-online-module input[type=submit].button {
   padding: 6px 8px;
 }
 
-.button:hover {
+.getting-online-module .button:hover {
   background-color: #bbb;
   color: white;
 }
 
-.button:active {
+.getting-online-module .button:active {
   box-shadow: 0 1px 0 0 #777;
   top: 1px;
 }
 
-.button.button-primary {
+.getting-online-module .button.button-primary {
   background-color: #3f8abf;
   box-shadow: 0 2px 0 0 #2c6085;
 }
-.button.button-primary:hover { background-color: #4795cc; }
-.button.button-primary:active { box-shadow: 0 1px 0 0 #2c6085; }
+.getting-online-module .button.button-primary:hover { background-color: #4795cc; }
+.getting-online-module .button.button-primary:active { box-shadow: 0 1px 0 0 #2c6085; }
 
-.button.button-success {
+.getting-online-module .button.button-success {
   background-color: #7da248;
   box-shadow: 0 2px 0 0 #57762a;
 }
-.button.button-success:hover { background-color: #90b45c; }
-.button.button-success:active { box-shadow: 0 1px 0 0 #57762a; }
+.getting-online-module .button.button-success:hover { background-color: #90b45c; }
+.getting-online-module .button.button-success:active { box-shadow: 0 1px 0 0 #57762a; }
 
-.button.button-warning {
+.getting-online-module .button.button-warning {
   background-color: #f6cc68;
   box-shadow: 0 2px 0 0 #ddb24d;
 }
-.button.button-warning:hover { background-color: #fad375; }
-.button.button-warning:active { box-shadow: 0 1px 0 0 #ddb24d; }
+.getting-online-module .button.button-warning:hover { background-color: #fad375; }
+.getting-online-module .button.button-warning:active { box-shadow: 0 1px 0 0 #ddb24d; }
 
-.button.button-danger {
+.getting-online-module .button.button-danger {
   background-color: #a94d4d;
   box-shadow: 0 2px 0 0 #7a2d2d;
 }
-.button.button-danger:hover { background-color: #b85c5c; }
-.button.button-danger:active { box-shadow: 0 1px 0 0 #7a2d2d; }
+.getting-online-module .button.button-danger:hover { background-color: #b85c5c; }
+.getting-online-module .button.button-danger:active { box-shadow: 0 1px 0 0 #7a2d2d; }
 
 /* ALERTS */
-.alert {
+.getting-online-module .alert {
   padding: 10px;
   margin-bottom: 10px;
   border: 1px solid transparent;
 
 }
 
-.alert-success {
+.getting-online-module .alert-success {
   color: #3c763d;
   background-color: #dff0d8;
   border-color: #d6e9c6;
 }
 
-.alert-info {
+.getting-online-module .alert-info {
   color: #31708f;
   background-color: #d9edf7;
   border-color: #bce8f1;
 }
 
-.alert-warning {
+.getting-online-module .alert-warning {
   color: #8a6d3b;
   background-color: #fcf8e3;
   border-color: #faebcc;
 }
 
-.alert-danger {
+.getting-online-module .alert-danger {
   color: #a94442;
   background: #f2dede;
   border-color: #ebccd1;
 }
 
+.getting-online-module .alert-success a,
+.getting-online-module .alert-info a,
+.getting-online-module .alert-warning a,
+.getting-online-module .alert-danger a {
+  font-weight: bold;
+}
+
+.getting-online-module .alert-success a {
+  color: #2b542c;
+}
+
+.getting-online-module .alert-info a {
+  color: #245269;
+}
+
+.getting-online-module .alert-warning a {
+  color: #66512c;
+}
+
+.getting-online-module .alert-danger a {
+  color: #843534;
+}
+
+
 /* INLINE CODE */
-code {
+.getting-online-module code {
   font-family: monospace;
 }
 
-p>code, li>code, dd>code, td>code {
+.getting-online-module p>code,
+.getting-online-module li>code,
+.getting-online-module dd>code,
+.getting-online-module td>code {
   background: #eee;
   padding: 0 5px 2px;
   border-radius: 4px;
@@ -227,19 +262,21 @@ p>code, li>code, dd>code, td>code {
 }
 
 /* TABLE */
-table {
+.getting-online-module table {
   margin-top: 5px;
   margin-bottom: 10px;
 }
-table td {
+.getting-online-module table td {
   vertical-align: top;
+  padding-bottom: 10px;
 }
 
-table.first-column-strong tr td:first-child {
+.getting-online-module table.first-column-strong tr td:first-child {
   font-weight: 700;
+  padding-right: 5px;
 }
 
-.faded {
+.getting-online-module .faded {
   font-weight: 300;
   color: #999;
 }
