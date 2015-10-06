@@ -29,13 +29,7 @@ if (platform.os.family === 'Windows') {
   else if (windows_version.match(/8/g))         { instruction_os = 'win-8'; }
   else                                          { instruction_os = 'win-8'; }  // Newest Windows guide
 }
-else if (platform.os.family === 'OS X') {
-  if      (platform.os.version.match(/10.7/g))  { instruction_os = 'osx-lion'; }
-  else if (platform.os.version.match(/10.8/g))  { instruction_os = 'osx-mountain-lion'; }
-  else if (platform.os.version.match(/10.9/g))  { instruction_os = 'osx-mavericks'; }
-  else if (platform.os.version.match(/10.10/g)) { instruction_os = 'osx-yosemite'; }
-  else                                          { instruction_os = 'osx-yosemite'; } // Newest OS X guide
-}
+else if (platform.os.family === 'OS X')         { instruction_os = 'osx'; }
 else if (platform.os.family === 'iOS')          { instruction_os = 'ios'; }
 else if (platform.os.family === 'Android')      { instruction_os = 'android'; }
 else if (platform.os.family === 'CentOS' ||
