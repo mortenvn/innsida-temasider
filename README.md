@@ -7,8 +7,11 @@ Dette er muliggjøres ved at nettsiden automatisk oppdager hvilket OS du sitter 
 
 ## Nok prat! La meg teste koden!
 For å teste koden lokalt, er man nødt til å sette opp en liten webserver:
+
 1. Åpne en terminal og naviger til rotmappen i prosjektet
+
 2. Kjør `python -m SimpleHTTPServer 8080` (eller tilsvarende)
+
 3. Åpne en nettleser og besøk URL-en `localhost:8080/iframe.html`
 
 ## Hvordan legger jeg til en ny guide?
