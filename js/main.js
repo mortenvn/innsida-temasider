@@ -27,7 +27,8 @@ if (platform.os.family.match(/Windows/g) && !platform.os.family.match(/Windows P
   if      (windows_version.match(/6/g))         { instruction_os = 'win-vista'; }
   else if (windows_version.match(/7/g))         { instruction_os = 'win-7'; }
   else if (windows_version.match(/8/g))         { instruction_os = 'win-8'; }
-  else                                          { instruction_os = 'win-8'; }  // Newest Windows guide
+  else if (windows_version.match(/10/g))        { instruction_os = 'win-10'; }
+  else                                          { instruction_os = 'win-10'; }  // Newest Windows guide
 }
 else if (platform.os.family === 'OS X')         { instruction_os = 'osx'; }
 else if (platform.os.family === 'iOS')          { instruction_os = 'ios'; }

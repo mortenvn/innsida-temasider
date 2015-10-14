@@ -19,7 +19,8 @@
   <p class="change-os-button"><a href="#">Endre operativsystem</a></p>
   <select class="change-os-select form-control">
     <optgroup label="Windows">
-      <option value="win-8">Windows 8 og 10</option>
+      <option value="win-10">Windows 10</option>
+      <option value="win-8">Windows 8</option>
       <option value="win-7">Windows 7</option>
       <option value="win-vista">Windows Vista</option>
     </optgroup>
@@ -53,6 +54,20 @@
     Example: else if (windows_version.match(/7/g)) { instruction_os = 'win-7'; }
   -->
   <h3>Instruksjoner</h3>
+  <!-- Windows 10 -->
+  <div class="instructions win-10">
+    <ol class="ol-big-numbers">
+      <li>
+        <a href="files/eduroam-W10-Ntu-N.exe" class="button button-primary">Last ned automatisk oppsett</a>
+      </li>
+      <li>Kjør filen du lastet ned. Dette vil starte en veiviser som vil hjelpe deg å sette opp eduroam. Følg instruksjonene.</li>
+      <li>Du vil bli spurt om brukernavn og passord. Fyll inn <code>brukernavn@ntnu.no</code> og <code>ditt-ntnu-passord</code>. Legg merke til at du må skrive @ntnu.no og <em>ikke</em> @stud.ntnu.no.</li>
+      <li>Etter at oppsettet er ferdig kan du koble deg til internett ved å velge <strong>eduroam</strong> i oversikten over trådløse nettverk.</li>
+    </ol>
+    <div class="alert alert-warning">
+      <strong>Fungerte det ikke?</strong> Om det automatiske oppsettet ikke virker kan du forsøke å sette opp eduroam <a href="https://innsida.ntnu.no/wiki/-/wiki/Norsk/Koble+til+tr%C3%A5dl%C3%B8snettet+med+Windows">manuelt</a>.
+    </div>
+  </div>
 
   <!-- Windows 8 -->
   <div class="instructions win-8">
