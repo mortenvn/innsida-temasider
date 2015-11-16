@@ -33,6 +33,10 @@
   line-height: 1.6;
 }
 
+.getting-online-module p {
+  margin-bottom: .5em;
+}
+
 .getting-online-module a {
   color: #4472b9;
 }
@@ -279,4 +283,83 @@
 .getting-online-module .faded {
   font-weight: 300;
   color: #999;
+}
+
+/* PANEL */
+.getting-online-module .panel {
+  background-color: #fafafa;
+  padding: 15px;
+  box-shadow: 0 1px 1px rgba(0,0,0,0.4);
+  margin-bottom: 20px;
+}
+
+/* SIMPLE GRID SYSTEM */
+/* https://css-tricks.com/dont-overthink-it-grids/ */
+.getting-online-module .grid:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.getting-online-module [class*='col-'] {
+  float: left;
+  padding-right: 40px;
+  margin-bottom: 40px;
+}
+
+.getting-online-module.grid [class*='col-']:last-of-type {
+  padding-right: 0;
+}
+
+.getting-online-module .col-2-3 {
+  width: 66.66%;
+}
+
+.getting-online-module .col-1-3 {
+  width: 33.33%;
+}
+
+.getting-online-module .col-1-2 {
+  width: 50%;
+}
+
+.getting-online-module .col-1-4 {
+  width: 25%;
+}
+
+.getting-online-module .col-1-8 {
+  width: 12.5%;
+}
+
+.getting-online-module .col-2-5 {
+  width: 40%;
+}
+
+.getting-online-module .col-3-5 {
+  width: 60%;
+}
+
+.getting-online-module .module {
+  padding: 40px;
+  background: #eee;
+}
+
+/* Opt-in outside padding */
+.getting-online-module .grid-pad {
+  padding: 40px 0 40px 40px;
+}
+.getting-online-module .grid-pad [class*='col-']:last-of-type {
+  padding-right: 40px;
+}
+
+@media screen and (max-width: 800px) {
+  .getting-online-module [class*='col-'] {
+    padding-right: 0;
+  }
+  .getting-online-module .col-2-5 {
+    width: 100%;
+  }
+  .getting-online-module .col-3-5 {
+    width: 100%;
+  }
 }
